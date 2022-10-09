@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Directory from './components/directory/directory.component';
 
 const App = () => {
@@ -29,11 +30,7 @@ const App = () => {
 		}
 	];
 
-	return (
-		<div className="categories-container">
-			<Directory categories={categories} />
-		</div>
-	);
+	return <Directory categories={categories} />;
 };
 
 export default App;
